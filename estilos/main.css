@@ -14,16 +14,66 @@ html {
 /*header*/
 .inicio {
   text-decoration: none;
-  font-size: 2.75rem;
+  font-size: 1.5rem;
   font-family: "Dancing Script", cursive;
   background-color: #B1E693; }
   .inicio__logo {
+    padding: 1rem;
     font-size: 3rem; }
   .inicio__gen {
     display: grid;
     justify-items: stretch;
     width: 100%;
     margin: 1rem; }
+  .inicio .shake-horizontal {
+    -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px); } }
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px); } }
 
 /*main*/
 .txt {
@@ -44,7 +94,7 @@ html {
       width: 30rem;
       height: 25rem;
       align-self: center;
-      box-shadow: 0px, 5px, 3px, 1px color(0, 0, 0, 0.1); }
+      box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
     .txt__img .tran {
       transition: all 0.5s ease-in; }
     .txt__img .tran:hover {
@@ -98,13 +148,13 @@ html {
     padding: 2rem;
     border-radius: 15%;
     align-self: center;
-    box-shadow: 0px, 5px, 3px, 1px color(0, 0, 0, 0.1); }
+    box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
 
 .boot {
   padding: 2rem;
   font-size: 2.75rem;
   font-family: "Dancing Script", cursive;
-  background-color: 0px, 5px, 3px, 1px color(0, 0, 0, 0.1); }
+  background-color: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
   .boot__acor {
     font-size: 2.5rem;
     font-family: "Dancing Script", cursive;
@@ -193,7 +243,7 @@ html {
     width: 30rem;
     height: 25rem;
     border-radius: 15%;
-    box-shadow: 0px, 5px, 3px, 1px color(0, 0, 0, 0.1); }
+    box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
 
 .peeling__titulo {
   margin: 2rem;
@@ -232,7 +282,7 @@ html {
       padding: 2rem;
       border-radius: 15%;
       align-self: center;
-      box-shadow: 0px, 5px, 3px, 1px color(0, 0, 0, 0.1); }
+      box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
 
 /*promociones*/
 .prom__intro {
@@ -269,7 +319,8 @@ html {
 .btn {
   margin: 2rem;
   padding: 2rem;
-  color: #7F7C82; }
+  color: #7F7C82;
+  background-color: white; }
 
 .cala {
   grid-template-columns: 1fr, auto, 1fr; }
