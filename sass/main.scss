@@ -7,7 +7,7 @@ $size-sub: 2.75rem;
 $size-text: 2.5rem;
 $background-title: #FBF4E9;
 $background-subtitle: #B1E693;
-$box-shadow: 0px,5px,3px,1px color 0,0,0,0.1;
+$box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
 $flex-wrap: wrap;
 $text-decoretion: none;
 $text-align: center;
@@ -39,15 +39,15 @@ html{
         font-family:$font;
         background-color: #B1E693;
     &__logo{
+        justify-content: center;
+        align-items: center;
         padding: 1rem;
         font-size: $size-title;
     }
     &__gen{
-        display: grid;
-        justify-items: stretch;
-        width: 100%;
-        margin: 1rem}
-        .shake-horizontal {
+        width: 80vw;
+    }
+.shake-horizontal {
             -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
                     animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         }
@@ -123,11 +123,11 @@ html{
         display: flex;
         justify-content: $justify-content;
         &--1{
-            border-radius: $borde-radius;
-            margin: $margin-gral;
-            padding: $padding-gral;
             width: 30rem;
             height: 25rem;
+            margin: $margin-gral;
+            padding: $padding-gral;
+            border-radius: $borde-radius;
             align-self: center;
             box-shadow: $box-shadow,
         } 
@@ -202,11 +202,12 @@ html{
     padding: $padding-gral;
     font-size: $size-sub;
     font-family: $font;
-    }
+
     &__acor{
         font-size: $size-text;
         font-family: $font;
         color: $font-color;
+    }
 }
 
 .final{
@@ -215,8 +216,30 @@ html{
     background-size: cover;
     font-size: $size-sub;
     text-align: $text-align;
-    font-family: $font;    
+    font-family: $font; 
+    color: rgba(27, 27, 27, 0.822);
+    &__text{
+        margin: 2rem;
+        padding: 2rem;
+    }
+    &__redes{
+        display: flex;
+        justify-content: space-evenly;   
+        margin: 2rem;
+        padding: 2rem;
+    }
 }
+.regalos{
+    margin: 2rem;
+    padding: 2rem;    
+}
+.btn{
+    margin: 4rem;
+    padding: 1.5rem;
+    color: black;
+    background-color: white;
+}
+
 /*contactos*/
 .form{
     margin: 5rem;
@@ -281,6 +304,8 @@ html{
 }
 /*faciales*/
 .faciales{
+    display: flex;
+    flex-direction: column;
     margin: $margin-gral;
     padding: $padding-gral;
     background-color: $background-title;
@@ -289,18 +314,14 @@ html{
         text-align: $text-align;
         font-family: $font;}
     &__img{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-     }
-    &__img--1{
-        margin: $margin-gral;
-        padding: $padding-gral;
-        width: 30rem;
-        height: 25rem;
-        border-radius: $borde-radius;
-        box-shadow: $box-shadow;
+        align-items: stretch;
+        &--1{
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: $borde-radius;
+            border: black
+        }
     }
 }
 .peeling__titulo{
@@ -375,17 +396,7 @@ html{
     font-size: $size-text;
     color: $font-color;
 }
-.regalos{
-    margin: 2rem;
-    padding: 2rem;
-    
-}
-.btn{
-    margin: 2rem;
-    padding: 2rem;
-    color: $font-color;
-    background-color: white;
-}
+/* pág 404*/
 .cala{
     grid-template-columns: 1fr, auto, 1fr;
 }

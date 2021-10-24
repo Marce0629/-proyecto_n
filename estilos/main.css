@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -18,13 +19,12 @@ html {
   font-family: "Dancing Script", cursive;
   background-color: #B1E693; }
   .inicio__logo {
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     font-size: 3rem; }
   .inicio__gen {
-    display: grid;
-    justify-items: stretch;
-    width: 100%;
-    margin: 1rem; }
+    width: 80vw; }
   .inicio .shake-horizontal {
     -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
@@ -88,13 +88,13 @@ html {
     display: flex;
     justify-content: center; }
     .txt__img--1 {
-      border-radius: 15%;
-      margin: 2rem;
-      padding: 2rem;
       width: 30rem;
       height: 25rem;
+      margin: 2rem;
+      padding: 2rem;
+      border-radius: 15%;
       align-self: center;
-      box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .txt__img .tran {
       transition: all 0.5s ease-in; }
     .txt__img .tran:hover {
@@ -148,13 +148,12 @@ html {
     padding: 2rem;
     border-radius: 15%;
     align-self: center;
-    box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .boot {
   padding: 2rem;
   font-size: 2.75rem;
-  font-family: "Dancing Script", cursive;
-  background-color: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
+  font-family: "Dancing Script", cursive; }
   .boot__acor {
     font-size: 2.5rem;
     font-family: "Dancing Script", cursive;
@@ -166,7 +165,26 @@ html {
   background-size: cover;
   font-size: 2.75rem;
   text-align: center;
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", cursive;
+  color: rgba(27, 27, 27, 0.822); }
+  .final__text {
+    margin: 2rem;
+    padding: 2rem; }
+  .final__redes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+    padding: 2rem; }
+
+.regalos {
+  margin: 2rem;
+  padding: 2rem; }
+
+.btn {
+  margin: 4rem;
+  padding: 1.5rem;
+  color: black;
+  background-color: white; }
 
 /*contactos*/
 .form {
@@ -225,6 +243,8 @@ html {
 
 /*faciales*/
 .faciales {
+  display: flex;
+  flex-direction: column;
   margin: 2rem;
   padding: 2rem;
   background-color: #FBF4E9; }
@@ -233,17 +253,13 @@ html {
     text-align: center;
     font-family: "Dancing Script", cursive; }
   .faciales__img {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-  .faciales__img--1 {
-    margin: 2rem;
-    padding: 2rem;
-    width: 30rem;
-    height: 25rem;
-    border-radius: 15%;
-    box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
+    align-items: stretch; }
+    .faciales__img--1 {
+      margin: 2rem;
+      padding: 2rem;
+      border-radius: 15%;
+      border: black; }
 
 .peeling__titulo {
   margin: 2rem;
@@ -282,7 +298,7 @@ html {
       padding: 2rem;
       border-radius: 15%;
       align-self: center;
-      box-shadow: 0px, 5px, 3px, 1px color 0, 0, 0, 0.1; }
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /*promociones*/
 .prom__intro {
@@ -312,16 +328,7 @@ html {
   font-size: 2.5rem;
   color: #7F7C82; }
 
-.regalos {
-  margin: 2rem;
-  padding: 2rem; }
-
-.btn {
-  margin: 2rem;
-  padding: 2rem;
-  color: #7F7C82;
-  background-color: white; }
-
+/* pág 404*/
 .cala {
   grid-template-columns: 1fr, auto, 1fr; }
 
