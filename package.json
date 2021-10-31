@@ -11,8 +11,16 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.14"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marce0629/-proyecto_n.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marce0629/-proyecto_n/issues"
+  },
+  "homepage": "https://github.com/Marce0629/-proyecto_n#readme",
   "description": ""
 }

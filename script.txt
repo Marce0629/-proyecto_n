@@ -1,0 +1,150 @@
+
+"build-css": "node-sass --include-path scss sass/main.scss estilos/main.css",
+"watch-css": "nodemon -e scss -x \"npm run build-css\""
+  @include md{
+                flex-direction: column;
+                font-size: $borde-radius;
+                width: 80%;
+                background-color: #CDF0EA;
+            }
+ @include md{
+            flex-direction: column;
+            font-size: $borde-radius;
+            background-color: #CDF0EA;
+        }
+/*media queris */
+@mixin md {
+    @media screen and (max-width:320px){   
+        @content;
+    }
+}/*media queris*/
+@media screen and (max-width: 768px){
+  
+}
+@media only screen and (min-width:320px)
+{   
+    .completo {
+     grid-template-columns: 1fr;
+     text-align: center; 
+    }
+}    
+
+&__img{
+        display: flex;
+        justify-content: $justify-content;
+        margin: $margin-gral;
+        padding: $padding-gral;
+        border-radius: $borde-radius;
+   /*
+.inicio {
+    display: flex;
+    justify-items: end;
+    background-color: #fff5ff;
+    width: 100%;
+    height: 100%;   
+    
+}
+a {
+    margin: 2.5rem;
+    padding: 2.5rem;
+    text-decoration: none;
+    color: #7F7C82;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    
+}
+#importante{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 4rem;
+    padding: 1.5rem;
+    margin: auto;
+}
+
+body {
+    background-color: #F0D9FF;
+    color: #7F7C82;
+    font-family: 'Dancing Script', cursive;
+productos
+main{ 
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h2 {
+    background-color: #fff5ff;
+    text-align-last: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+
+h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem
+}
+
+.bordesLocos{
+    border-radius: 30px;
+    margin: 8rem;
+    padding: 2rem;
+    width: 30rem;
+    height: 25rem;
+    align-self: center;
+    box-shadow: 0px 5px 3px 1px; color: 0,0,0,0.1;
+}
+
+.img {
+    transition: all 0.5s ease-in;
+}
+.img:hover{
+    transform: scale(1.1, 1.1);
+    color: black;
+}
+
+.mov{
+    transform: rotate(15deg);
+}
+
+.mov1{
+    transform: rotate(-15deg);
+}
+ 
+.tamano{
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.color {
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(179, 167, 165, 1);
+    border: turquoise solid;
+    padding: 1rem;
+}
+
+}
+@media only screen and (min-width:320px)
+{   
+    a {
+     grid-template-columns: 1fr;
+     overflow: hidden;
+     text-align: center; 
+    }
+
+    header{
+        grid-template-columns: auto;
+        background-color: aquamarine;
+        width: 80%;
+
+    }
+  
+}

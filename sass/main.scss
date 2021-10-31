@@ -1,10 +1,10 @@
-$margin-gral: 2rem;
-$padding-gral: 2rem;
+$margin-gral: 1rem;
+$padding-gral: 1rem;
 $font: 'Dancing Script', cursive;
 $font-color: #7F7C82;
-$size-title: 3rem;
-$size-sub: 2.75rem;
-$size-text: 2.5rem;
+$size-title: 2rem;
+$size-sub: 1.75rem;
+$size-text: 1.5rem;
 $background-title: #FBF4E9;
 $background-subtitle: #B1E693;
 $box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
@@ -25,8 +25,8 @@ $height: 25rem;
     box-sizing: border-box;
 }
 html{
-    font-size: 62,5%;
-}
+    font-size: 62,5%;}
+
 /*body html*/
 .completo{
     font-family: $font;
@@ -35,14 +35,14 @@ html{
 }
 /*header html*/
 .inicio{
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-family:$font;
-        background-color: #B1E693;
+    text-decoration: none;
+    font-size: $size-text;
+    font-family:$font;
+    background-color: #B1E693;
     &__logo{
         justify-content: center;
         align-items: center;
-        padding: 1rem;
+        padding: $padding-gral;
         font-size: $size-title;
     }
     &__gen{
@@ -117,18 +117,21 @@ html{
     padding: $padding-gral;
 
     &__intro{
-        flex-wrap: $flex-wrap;
-        font-size: 3.75rem ;
-        text-align: $text-align;
+        display: flex;
+        justify-content: center;
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-sub;
     }
     &__img{
         display: flex;
-        justify-content: $justify-content;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         &--1{
-            width: 30rem;
-            height: 25rem;
             margin: $margin-gral;
-            padding: $padding-gral;
+            padding: 0.25rem;
+            border: #7F7C82;
             border-radius: $borde-radius;
             align-self: center;
             box-shadow: $box-shadow,
@@ -148,13 +151,11 @@ html{
         }   
     }    
     &__des{
-        font-size: $size-text;
-        text-align: $text-align;
         margin: $margin-gral;
         padding: $padding-gral;
+        font-size: $size-text;
     }
     &__info{
-        flex-wrap: $flex-wrap;
         margin: $margin-gral;
         padding: $padding-gral;
         font-size: $size-sub;
@@ -162,11 +163,10 @@ html{
     }    
 }
 .gab{
-    font-family: $font;
+    font-size: $size-sub;
      &__des{
        margin: $margin-gral;
        padding: $padding-gral;
-       font-size: $size-sub;
        text-align: $text-align;
     }
     &__info{
@@ -177,63 +177,62 @@ html{
     }
 }
 .prod{
-    font-family: $font;
+    font-size: $size-text;
     &__des{
-        flex-wrap: $flex-wrap;
         margin: $margin-gral;
         padding: $padding-gral;
-        font-size: $size-sub;
         text-align: $text-align;
     }
     &__video{
         display: flex;
-        justify-content: $justify-content;
-        overflow: hidden;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     &__video--1{
-        width: 20rem;
-        height: 25rem;
+        width: auto;
+        height: auto;
         margin: $margin-gral;
-        padding: $padding-gral;
+        padding: 0.25rem;
+        border: #7F7C82;
         border-radius: $borde-radius;
         align-self: center;
-        box-shadow: $box-shadow;
+        box-shadow: $box-shadow,
     }
 }
 .boot{
     padding: $padding-gral;
-    font-size: $size-sub;
-    font-family: $font;
+    font-size: $size-text;
 
     &__acor{
         font-size: $size-text;
-        font-family: $font;
-        color: $font-color;
     }
+}
+.accordion-button:not(.collapsed){
+    color: black;
 }
 
 .final{
     flex-wrap: $flex-wrap;
     background-image: url("../imagenes/footer.jpg");
     background-size: cover;
-    font-size: $size-sub;
+    font-size: $size-text;
     text-align: $text-align;
     font-family: $font; 
     color: rgba(27, 27, 27, 0.822);
     &__text{
-        margin: 2rem;
-        padding: 2rem;
+        margin: $margin-gral;
+        padding: $padding-gral;
     }
     &__redes{
         display: flex;
         justify-content: space-evenly;   
-        margin: 2rem;
-        padding: 2rem;
+        margin: $margin-gral;
+        padding: $padding-gral;
     }
 }
 .regalos{
-    margin: 2rem;
-    padding: 2rem;    
+    margin: $margin-gral;
+    padding: $padding-gral;    
 }
 .btn{
     margin: 4rem;
@@ -254,14 +253,17 @@ html{
     }
     &__img{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-around;
         &--1{
-            margin: 2rem;
-            padding: 2rem;
+            width: auto;
+            height: auto;
+            margin: auto;
+            padding: 0.25rem;
+            border: #7F7C82;
             border-radius: $borde-radius;
-            border: black
+            align-self: center;
+            box-shadow: $box-shadow,           
         }
     }
 }
@@ -376,7 +378,7 @@ html{
 }
 .encabezado{
     display: grid;
-    justify-content: space-around;
+    justify-items: center;
     font-family: $font;
     font-size: $size-text;
     color: $font-color;
@@ -395,8 +397,6 @@ html{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: $margin-gral;
-        padding: $padding-gral;
         font-size: $size-sub;
     }
     &__label{
@@ -407,4 +407,5 @@ html{
 /*404*/
 .cala{
     grid-template-columns: 1fr, auto, 1fr;
+    align-items: center;
 }
