@@ -1,5 +1,7 @@
+$align-center: center;
 $margin-gral: 1rem;
 $padding-gral: 1rem;
+$padding-border: 0.25rem;
 $font: 'Dancing Script', cursive;
 $font-color: #7F7C82;
 $size-title: 2rem;
@@ -12,12 +14,10 @@ $flex-wrap: wrap;
 $text-decoretion: none;
 $text-align: center;
 $borde-radius: 15%;
-$justify-content: center;
+$justify-center: center;
 $text-align: center;
-$width: 30rem;
-$height: 25rem;
-
-
+$displey-flex: flex;
+$color-especial: rgba(27, 27, 27, 0.822);
 
 *{
     margin: 0%;
@@ -35,13 +35,12 @@ html{
 }
 /*header html*/
 .inicio{
-    text-decoration: none;
+    text-decoration: $text-decoretion;
     font-size: $size-text;
-    font-family:$font;
-    background-color: #B1E693;
+    background-color: $background-subtitle;
     &__logo{
-        justify-content: center;
-        align-items: center;
+        justify-content: $justify-center;
+        align-items: $align-center;
         padding: $padding-gral;
         font-size: $size-title;
     }
@@ -117,23 +116,23 @@ html{
     padding: $padding-gral;
 
     &__intro{
-        display: flex;
-        justify-content: center;
+        display: $displey-flex;
+        justify-content: $justify-center;
         margin: $margin-gral;
         padding: $padding-gral;
         font-size: $size-sub;
     }
     &__img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        display: $displey-flex;
+        justify-content: $justify-center;
+        align-items: $align-center;
+        flex-wrap: $flex-wrap;
         &--1{
             margin: $margin-gral;
-            padding: 0.25rem;
-            border: #7F7C82;
+            padding: $padding-border;
+            border: $font-color;
             border-radius: $borde-radius;
-            align-self: center;
+            align-items: $align-center;
             box-shadow: $box-shadow,
         } 
         .tran {
@@ -184,18 +183,16 @@ html{
         text-align: $text-align;
     }
     &__video{
-        display: flex;
-        flex-wrap: wrap;
+        display: $displey-flex;
+        flex-wrap: $flex-wrap;
         justify-content: space-around;
     }
     &__video--1{
-        width: auto;
-        height: auto;
         margin: $margin-gral;
-        padding: 0.25rem;
-        border: #7F7C82;
+        padding: $padding-border;
+        border: $font-color;
         border-radius: $borde-radius;
-        align-self: center;
+        align-items: $align-center;
         box-shadow: $box-shadow,
     }
 }
@@ -208,36 +205,36 @@ html{
     }
 }
 .accordion-button:not(.collapsed){
-    color: black;
+    color: $color-especial;
 }
 
 .final{
-    flex-wrap: $flex-wrap;
     background-image: url("../imagenes/footer.jpg");
     background-size: cover;
-    font-size: $size-text;
-    text-align: $text-align;
-    font-family: $font; 
-    color: rgba(27, 27, 27, 0.822);
-    &__text{
-        margin: $margin-gral;
+    font-size: $size-sub;
+    text-align: $text-align; 
+    color: $color-especial;
+    &__text {
+        margin: $margin-gral (.3rem);
         padding: $padding-gral;
     }
     &__redes{
-        display: flex;
+        display: $displey-flex;
         justify-content: space-evenly;   
         margin: $margin-gral;
         padding: $padding-gral;
     }
 }
+
+/*boton 404*/
 .regalos{
-    margin: $margin-gral;
+    margin: 5rem;
     padding: $padding-gral;    
 }
 .btn{
-    margin: 4rem;
-    padding: 1.5rem;
-    color: black;
+    margin: $margin-gral (.3rem);
+    padding: $padding-gral;
+    color: $color-especial;
     background-color: white;
 }
 
@@ -337,7 +334,7 @@ html{
             width: 30rem;
             height: 25rem;
             border-radius: $borde-radius;
-            justify-content: center;
+            justify-content: $justify-center;
             box-shadow: $box-shadow;
         }
     } 
@@ -367,11 +364,11 @@ html{
     
 }
 
-/*cuadro*/
+/*cuadro de promoción*/
 
 .beneficio__cuadro--color{
     padding: $padding-gral;
-    font-size: $size-sub;
+    font-size: $size-text;
     text-align: $text-align;
     background-color: #CDF0EA;
     border: turquoise solid;
@@ -387,25 +384,25 @@ html{
 /*contactos*/
 
 .form{
-    margin: 5rem;
+    margin: $margin-gral (.5rem);
     padding: $padding-gral;
     text-align: $text-align;
     &__form{
-       font-size: $size-sub;
+       font-size: $size-text;
     }
     &__row{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: $size-sub;
+        margin: $margin-gral (.5rem);
+        display: $displey-flex;
+        justify-content: $justify-center;
+        align-items: $align-center;
     }
     &__label{
-        color: black;
+        color: $color-especial;
 
     }
 }
 /*404*/
 .cala{
     grid-template-columns: 1fr, auto, 1fr;
-    align-items: center;
+    align-items: $align-center;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -16,7 +17,6 @@ html {
 .inicio {
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: "Dancing Script", cursive;
   background-color: #B1E693; }
   .inicio__logo {
     justify-content: center;
@@ -95,7 +95,7 @@ html {
       padding: 0.25rem;
       border: #7F7C82;
       border-radius: 15%;
-      align-self: center;
+      align-items: center;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .txt__img .tran {
       transition: all 0.5s ease-in; }
@@ -139,13 +139,11 @@ html {
     flex-wrap: wrap;
     justify-content: space-around; }
   .prod__video--1 {
-    width: auto;
-    height: auto;
     margin: 1rem;
     padding: 0.25rem;
     border: #7F7C82;
     border-radius: 15%;
-    align-self: center;
+    align-items: center;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .boot {
@@ -155,18 +153,16 @@ html {
     font-size: 1.5rem; }
 
 .accordion-button:not(.collapsed) {
-  color: black; }
+  color: rgba(27, 27, 27, 0.822); }
 
 .final {
-  flex-wrap: wrap;
   background-image: url("../imagenes/footer.jpg");
   background-size: cover;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-align: center;
-  font-family: "Dancing Script", cursive;
   color: rgba(27, 27, 27, 0.822); }
   .final__text {
-    margin: 1rem;
+    margin: 1rem 0.3rem;
     padding: 1rem; }
   .final__redes {
     display: flex;
@@ -174,14 +170,15 @@ html {
     margin: 1rem;
     padding: 1rem; }
 
+/*boton 404*/
 .regalos {
-  margin: 1rem;
+  margin: 5rem;
   padding: 1rem; }
 
 .btn {
-  margin: 4rem;
-  padding: 1.5rem;
-  color: black;
+  margin: 1rem 0.3rem;
+  padding: 1rem;
+  color: rgba(27, 27, 27, 0.822);
   background-color: white; }
 
 /*faciales*/
@@ -285,10 +282,10 @@ html {
     font-size: 1.5rem;
     text-align: center; }
 
-/*cuadro*/
+/*cuadro de promoción*/
 .beneficio__cuadro--color {
   padding: 1rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-align: center;
   background-color: #CDF0EA;
   border: turquoise solid; }
@@ -302,18 +299,18 @@ html {
 
 /*contactos*/
 .form {
-  margin: 5rem;
+  margin: 1rem 0.5rem;
   padding: 1rem;
   text-align: center; }
   .form__form {
-    font-size: 1.75rem; }
+    font-size: 1.5rem; }
   .form__row {
+    margin: 1rem 0.5rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.75rem; }
+    justify-content: center;
+    align-items: center; }
   .form__label {
-    color: black; }
+    color: rgba(27, 27, 27, 0.822); }
 
 /*404*/
 .cala {
