@@ -16,15 +16,16 @@ html {
 /*header html*/
 .inicio {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: #B1E693; }
   .inicio__logo {
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     font-size: 2rem; }
   .inicio__gen {
     width: 80vw; }
+  .inicio__lista {
+    font-size: 1.25rem; }
   .inicio .shake-horizontal {
     -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
@@ -81,21 +82,20 @@ html {
   padding: 1rem; }
   .txt__intro {
     display: flex;
-    justify-content: center;
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.75rem; }
+    font-size: 1.75rem;
+    justify-content: center; }
   .txt__img {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-around; }
     .txt__img--1 {
+      width: 60vh;
       margin: 1rem;
       padding: 0.25rem;
       border: #7F7C82;
       border-radius: 15%;
-      align-items: center;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .txt__img .tran {
       transition: all 0.5s ease-in; }
@@ -107,14 +107,21 @@ html {
     .txt__img .mov1 {
       transform: rotate(-15deg); }
   .txt__des {
+    display: flex;
+    justify-content: center;
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem; }
+    font-size: 1.25rem;
+    text-align: center; }
+  .txt__info1 {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.75rem; }
   .txt__info {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.75rem;
-    text-align: center; }
+    font-size: 1.25rem; }
 
 .gab {
   font-size: 1.75rem; }
@@ -123,13 +130,13 @@ html {
     padding: 1rem;
     text-align: center; }
   .gab__info {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     margin: 1rem;
     padding: 1rem; }
 
 .prod {
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
   .prod__des {
     margin: 1rem;
     padding: 1rem;
@@ -139,18 +146,19 @@ html {
     flex-wrap: wrap;
     justify-content: space-around; }
   .prod__video--1 {
+    width: 60vh;
     margin: 1rem;
     padding: 0.25rem;
     border: #7F7C82;
     border-radius: 15%;
-    align-items: center;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .boot {
+  margin: 1rem;
   padding: 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
   .boot__acor {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
 
 .accordion-button:not(.collapsed) {
   color: rgba(27, 27, 27, 0.822); }
@@ -183,24 +191,23 @@ html {
 
 /*faciales*/
 .faciales {
-  font-size: 1.75rem; }
+  margin: 1rem;
+  padding: 1rem; }
   .faciales__intro {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center; }
   .faciales__img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
     .faciales__img--1 {
-      width: auto;
-      height: auto;
-      margin: auto;
+      width: 60vh;
+      margin: 1rem;
       padding: 0.25rem;
       border: #7F7C82;
       border-radius: 15%;
-      align-self: center;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .peeling {
@@ -211,38 +218,37 @@ html {
   .peeling__desa {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
 
 /*corporales*/
 .corporales {
   margin: 1rem;
-  padding: 1rem;
-  font-size: 1.75rem;
-  text-align: center; }
+  padding: 1rem; }
   .corporales__intro {
     margin: 1rem;
     padding: 1rem;
-    font-size: 2rem; }
+    font-size: 1.75rem;
+    text-align: center; }
   .corporales__titulos {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: center; }
   .corporales__rusas {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
   .corporales__body {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
   .corporales__crio {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
 
 /*productos*/
@@ -250,22 +256,23 @@ html {
   margin: 1rem;
   padding: 1rem; }
   .produc__intro {
-    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.75rem;
     text-align: center; }
-  .produc__demos {
-    display: grid;
-    grid-template-rows: 5fr;
-    justify-items: center;
-    align-items: baseline; }
-    .produc__demos--gral {
-      width: 30rem;
-      height: 25rem;
-      border-radius: 15%;
-      justify-content: center;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
   .produc__sub {
-    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.75rem;
     text-align: center; }
+
+.card-group {
+  margin: 1rem;
+  padding: 1rem; }
+
+.card-second {
+  margin: 1rem;
+  padding: 1rem; }
 
 /*promociones*/
 .prom {
@@ -279,13 +286,13 @@ html {
   .prom__des {
     margin: 1rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
 
 /*cuadro de promoción*/
 .beneficio__cuadro--color {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
   background-color: #CDF0EA;
   border: turquoise solid; }
@@ -294,7 +301,7 @@ html {
   display: grid;
   justify-items: center;
   font-family: "Dancing Script", cursive;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #7F7C82; }
 
 /*contactos*/
@@ -303,7 +310,7 @@ html {
   padding: 1rem;
   text-align: center; }
   .form__form {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .form__row {
     margin: 1rem 0.5rem;
     display: flex;
