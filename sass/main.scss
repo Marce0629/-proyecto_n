@@ -2,7 +2,8 @@ $align-center: center;
 $margin-gral: 1rem;
 $padding-gral: 1rem;
 $padding-border: 0.25rem;
-$font: 'Dancing Script', cursive;
+$font-title: 'Dancing Script', cursive;
+$font:  'Handlee', cursiva;
 $font-color: #7F7C82;
 $size-title: 2rem;
 $size-sub: 1.75rem;
@@ -35,6 +36,7 @@ html{
 /*header html*/
 .inicio{
     text-decoration: $text-decoretion;
+    font-family: $font-title;
     font-size: $size-text;
     background-color: $background-subtitle;
     &__logo{
@@ -117,16 +119,17 @@ html{
     padding: $padding-gral;
 
     &__intro{
-        display: $displey-flex;
         margin: $margin-gral;
         padding: $padding-gral;
+        text-align: $align-center;
         font-size: $size-sub;
-        justify-content: $justify-center;
+        
     }
     &__img{
         display: $displey-flex;
+        flex-direction: column;
         flex-wrap: $flex-wrap;
-        justify-content: space-around;
+        align-items: $align-center;
         &--1{
             width: 60vh;
             margin: $margin-gral;
@@ -150,8 +153,6 @@ html{
         }   
     }    
     &__des{
-        display: $displey-flex;
-        justify-content: $justify-center;
         margin: $margin-gral;
         padding: $padding-gral;
         font-size: $size-text;
@@ -237,8 +238,9 @@ html{
 
 /*boton 404*/
 .regalos{
-    margin: 5rem;
-    padding: $padding-gral;    
+    margin: $margin-gral;
+    padding: $padding-gral;
+
 }
 .btn{
     margin: $margin-gral (.3rem);
@@ -362,11 +364,23 @@ html{
         text-align: $text-align;
     }
     &__des{
+        margin: $margin-gral (.4rem);
+        padding: $padding-gral;
+        font-size: $size-sub;
+        text-align: $text-align;
+    }
+    &__des2{
         margin: $margin-gral;
         padding: $padding-gral;
         font-size: $size-text;
         text-align: $text-align;
     }
+}    
+.table{
+    margin: $margin-gral;
+    padding: $padding-gral;
+    font-size: $size-text;
+    text-align: $text-align;
     
 }
 
@@ -379,13 +393,6 @@ html{
     background-color: #CDF0EA;
     border: turquoise solid;
 }
-.encabezado{
-    display: grid;
-    justify-items: center;
-    font-family: $font;
-    font-size: $size-text;
-    color: $font-color;
-}
 
 /*contactos*/
 
@@ -394,7 +401,7 @@ html{
     padding: $padding-gral;
     text-align: $text-align;
     &__form{
-       font-size: $size-text;
+        font-size: $size-text;
     }
     &__row{
         margin: $margin-gral (.5rem);
@@ -404,10 +411,17 @@ html{
     }
     &__label{
         color: $color-especial;
-
+        
     }
 }
 /*404*/
+.encabezado{
+    display: grid;
+    justify-items: center;
+    font-family: $font;
+    font-size: $size-text;
+    color: $font-color;
+}
 .cala{
     grid-template-columns: 1fr, auto, 1fr;
     align-items: $align-center;
