@@ -1,0 +1,30 @@
+.final{
+    background-image: url("../imagenes/footer.jpg");
+    background-size: $background-cover;
+    font-size: $size-sub;
+    text-align: $text-align; 
+    color: $color-especial;
+    &__text {
+        margin: ($margin-gral) .3rem;
+        padding: $padding-gral;
+    }
+    &__redes{
+        display: $displey-flex;
+        justify-content: $justify-contentSpace;   
+        margin: $margin-gral;
+        padding: $padding-gral;
+    }
+}
+
+/*boton 404*/
+.regalos{
+    margin: $margin-gral;
+    padding: $padding-gral;
+
+}
+.btn{
+    margin: ($margin-gral).3rem;
+    padding: $padding-gral;
+    color: $color-especial;
+    background-color: $background-title;
+}

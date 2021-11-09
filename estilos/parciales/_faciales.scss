@@ -1,0 +1,37 @@
+/*faciales*/
+
+.faciales{
+    margin: $margin-gral;
+    padding: $padding-gral;
+    &__intro{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-sub;
+        text-align: $text-align;
+    }
+    &__img{
+        display: $displey-flex;
+        flex-wrap: $flex-wrap;
+        justify-content: $justify-contentSpace;
+        &--1{
+            width: $widthVh;
+            margin: $margin-gral;
+            padding: $padding-border;
+            border: $font-color;
+            border-radius: $borde-radius;
+            box-shadow: $box-shadow,           
+        }
+    }
+}
+.peeling{
+    margin: $margin-gral;
+    padding: $padding-gral;
+    font-size: $size-sub;
+    text-align: $text-align;   
+    &__desa{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-text;
+        text-align: $text-align;
+    }
+}

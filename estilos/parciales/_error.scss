@@ -1,0 +1,12 @@
+/*404*/
+.encabezado{
+    display: $displey-grid;
+    justify-items: $justify-center;
+    font-family: $font;
+    font-size: $size-text;
+    color: $font-color;
+}
+.cala{
+    grid-template-columns: $grid-columns;
+    align-items: $align-center;
+}

@@ -1,0 +1,26 @@
+/*productos*/
+
+.produc{
+    margin: $margin-gral;
+    padding: $padding-gral; 
+    &__intro{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-sub;
+        text-align: $text-align;
+    }
+    &__sub{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-sub;
+        text-align: $text-align;
+    }
+}
+.card-group{
+    margin: $margin-gral ;
+    padding: $padding-gral;
+    }
+.card-second{
+    margin: $margin-gral ;
+    padding: $padding-gral;
+}

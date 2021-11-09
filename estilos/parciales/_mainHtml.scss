@@ -1,0 +1,105 @@
+/*main titulo de html*/
+
+.txt{
+    margin: $margin-gral;
+    padding: $padding-gral;
+
+    &__intro{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        text-align: $align-center;
+        font-size: $size-sub;
+        
+    }
+    &__img{
+        display: $displey-flex;
+        flex-direction: $flex-column;
+        flex-wrap: $flex-wrap;
+        align-items: $align-center;
+        &--1{
+            width: $widthVh;
+            margin: $margin-gral;
+            padding: $padding-border;
+            border: $font-color;
+            border-radius: $borde-radius;
+            box-shadow: $box-shadow,
+        } 
+        .tran {
+            transition: all 0.5s ease-in;
+        }
+        .tran:hover{
+            transform: scale(1.1, 1.1);
+            color: black;
+        }        
+        .mov{
+            transform: rotate(15deg);
+        }        
+        .mov1{
+            transform: rotate(-15deg);
+        }   
+    }    
+    &__des{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-text;
+        text-align: $text-align;
+    }
+    &__info1{
+        text-align: $text-align;
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-sub;
+    }
+    &__info{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-text;
+    }    
+}
+.gab{
+    font-size: $size-sub;
+     &__des{
+       margin: $margin-gral;
+       padding: $padding-gral;
+       text-align: $text-align;
+    }
+    &__info{
+        font-size: $size-text;
+        text-align: $text-align;
+        margin: $margin-gral;
+        padding: $padding-gral;
+    }
+}
+.prod{
+    font-size: $size-text;
+    &__des{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        text-align: $text-align;
+    }
+    &__video{
+        display: $displey-flex;
+        flex-wrap: $flex-wrap;
+        justify-content: $justify-contentSpace;
+    }
+    &__video--1{
+        width: $widthVh;
+        margin: $margin-gral;
+        padding: $padding-border;
+        border: $font-color;
+        border-radius: $borde-radius;
+        box-shadow: $box-shadow,
+    }
+}
+.boot{
+    margin: $margin-gral;
+    padding: $padding-gral;
+    font-size: $size-text;
+
+    &__acor{
+        font-size: $size-text;
+    }
+}
+.accordion-button:not(.collapsed){
+    color: $color-especial;
+}

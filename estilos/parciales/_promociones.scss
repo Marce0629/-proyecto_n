@@ -1,0 +1,30 @@
+/*promociones*/
+
+.prom{
+    margin: $margin-gral;
+    padding: $padding-gral;
+    &__intro{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-sub;
+        text-align: $text-align;
+    }
+    &__des{
+        margin: ($margin-gral) .4rem;
+        padding: $padding-gral;
+        font-size: $size-sub;
+        text-align: $text-align;
+    }
+    &__des2{
+        margin: $margin-gral;
+        padding: $padding-gral;
+        font-size: $size-text;
+        text-align: $text-align;
+    }
+}    
+.table{
+    margin: $margin-gral;
+    padding: $padding-gral;
+    font-size: $size-text;
+    text-align: $text-align;  
+}

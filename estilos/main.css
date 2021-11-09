@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -162,64 +161,6 @@ html {
 .accordion-button:not(.collapsed) {
   color: rgba(27, 27, 27, 0.822); }
 
-.final {
-  background-image: url("../imagenes/footer.jpg");
-  background-size: cover;
-  font-size: 1.75rem;
-  text-align: center;
-  color: rgba(27, 27, 27, 0.822); }
-  .final__text {
-    margin: 1rem 0.3rem;
-    padding: 1rem; }
-  .final__redes {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
-    padding: 1rem; }
-
-/*boton 404*/
-.regalos {
-  margin: 1rem;
-  padding: 1rem; }
-
-.btn {
-  margin: 1rem 0.3rem;
-  padding: 1rem;
-  color: rgba(27, 27, 27, 0.822);
-  background-color: white; }
-
-/*faciales*/
-.faciales {
-  margin: 1rem;
-  padding: 1rem; }
-  .faciales__intro {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.75rem;
-    text-align: center; }
-  .faciales__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .faciales__img--1 {
-      width: 60vh;
-      margin: 1rem;
-      padding: 0.25rem;
-      border: #7F7C82;
-      border-radius: 15%;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
-.peeling {
-  margin: 1rem;
-  padding: 1rem;
-  font-size: 1.75rem;
-  text-align: center; }
-  .peeling__desa {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.25rem;
-    text-align: center; }
-
 /*corporales*/
 .corporales {
   margin: 1rem;
@@ -299,14 +240,6 @@ html {
   font-size: 1.25rem;
   text-align: center; }
 
-/*cuadro de promoción*/
-.beneficio__cuadro--color {
-  padding: 1rem;
-  font-size: 1.25rem;
-  text-align: center;
-  background-color: #CDF0EA;
-  border: turquoise solid; }
-
 /*contactos*/
 .form {
   margin: 1rem 0.5rem;
@@ -321,6 +254,32 @@ html {
     align-items: center; }
   .form__label {
     color: rgba(27, 27, 27, 0.822); }
+
+.final {
+  background-image: url("../imagenes/footer.jpg");
+  background-size: cover;
+  font-size: 1.75rem;
+  text-align: center;
+  color: rgba(27, 27, 27, 0.822); }
+  .final__text {
+    margin: 1rem 0.3rem;
+    padding: 1rem; }
+  .final__redes {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem; }
+
+/*boton 404*/
+.regalos {
+  margin: 1rem;
+  padding: 1rem; }
+
+.btn {
+  margin: 1rem 0.3rem;
+  padding: 1rem;
+  color: rgba(27, 27, 27, 0.822);
+  background-color: #FBF4E9; }
 
 /*404*/
 .encabezado {
