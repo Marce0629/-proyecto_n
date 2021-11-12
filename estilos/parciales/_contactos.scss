@@ -1,14 +1,14 @@
 /*contactos*/
 
 .form{
-    margin: $margin-gral (.5rem);
+    margin: ($margin-gral).5rem;
     padding: $padding-gral;
     text-align: $text-align;
     &__form{
         font-size: $size-text;
     }
     &__row{
-        margin: $margin-gral (.5rem);
+        margin: ($margin-gral).5rem;
         display: $displey-flex;
         justify-content: $justify-center;
         align-items: $align-center;

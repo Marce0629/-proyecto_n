@@ -161,6 +161,38 @@ html {
 .accordion-button:not(.collapsed) {
   color: rgba(27, 27, 27, 0.822); }
 
+/*faciales*/
+.faciales {
+  margin: 1rem;
+  padding: 1rem; }
+  .faciales__intro {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.75rem;
+    text-align: center; }
+  .faciales__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .faciales__img--1 {
+      width: 60vh;
+      margin: 1rem;
+      padding: 0.25rem;
+      border: #7F7C82;
+      border-radius: 15%;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.peeling {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.75rem;
+  text-align: center; }
+  .peeling__desa {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-align: center; }
+
 /*corporales*/
 .corporales {
   margin: 1rem;
@@ -175,21 +207,18 @@ html {
     padding: 1rem;
     font-size: 1.75rem;
     text-align: center; }
-  .corporales__rusas {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.25rem;
-    text-align: center; }
-  .corporales__body {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.25rem;
-    text-align: center; }
-  .corporales__crio {
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.25rem;
-    text-align: center; }
+
+.corporales-3 {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-align: center; }
+
+.corporales-4 {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-align: center; }
 
 /*productos*/
 .produc {

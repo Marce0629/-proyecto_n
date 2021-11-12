@@ -14,23 +14,12 @@
         padding: $padding-gral;
         font-size: $size-sub;
         text-align: $text-align;
-    }
-    &__rusas{
-        margin: $margin-gral;
-        padding: $padding-gral;
-        font-size: $size-text;
-        text-align: $text-align;
-    }
-    &__body{
-        margin: $margin-gral;
-        padding: $padding-gral;
-        font-size: $size-text;
-        text-align: $text-align;
-    }
-    &__crio{
-        margin: $margin-gral;
-        padding: $padding-gral;
-        font-size: $size-text;
-        text-align: $text-align;
-    }
+   }
 }
+@for $i from 3 to 5 {
+    .corporales-#{$i} {
+    margin: $margin-gral;
+    padding: $padding-gral;
+    font-size: $size-text;
+    text-align: $text-align;}
+}   
